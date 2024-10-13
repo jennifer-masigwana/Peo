@@ -2,7 +2,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -171,6 +171,7 @@ h1 {
     cursor: pointer;
     position: relative;
     min-height: 200px;
+    margin-bottom: 100px;
 }
 
 .offer-item:hover {
@@ -239,6 +240,209 @@ h1 {
 
 
 
+/*ABOUT US STARTS HERE*/
+
+
+/* About Us Section */
+.about-us {
+    background-color: #004f67;
+    color: white;
+    padding: 60px;
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+
+.mission-vision-values {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mission {
+    background-color: transparent;
+    width: 30%;
+    padding: 30px;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.vision {
+    background-color: transparent;
+    width: 30%;
+    padding: 30px;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.core-values {
+    background-color: transparent;
+    width: 30%;
+    padding: 30px;
+    text-align: center;
+}
+
+.mission img, .vision img, .core-values img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.mission h2, .vision h2, .core-values h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.mission p, .vision p, .core-values p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+/* Meet the Team Section */
+.team-section {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    color: #004f67;
+    margin-bottom: 50px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 90px;
+    border-bottom: 2px solid  #004f67;
+}
+
+.team-member {
+    text-align: center;
+    position: relative;
+    margin-right: -50px;
+}
+
+.team-member:last-child {
+    margin-right: 0;
+}
+
+.team-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #004f67;
+    transition: transform 0.3s ease;
+}
+
+.team-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member:hover .team-circle {
+    transform: scale(1.1);
+}
+
+.team-member h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #004f67;
+}
+
+.team-member p {
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mission-vision-values {
+        flex-direction: column;
+    }
+
+    .team-container {
+        flex-direction: column;
+    }
+
+    .team-member {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+}
+
+
+/*ABOUT US ENDS HERE*/
+
+
+
+
+
+/*PAGE ENDING STARTS HERE*/
+
+/* General Body Styles */
+.last-page {
+    background-color: #ffffff;
+    color: #333333;
+    text-align: center;
+}
+
+/* Partners Section */
+.partners-section {
+    padding: 30px auto;
+    background-color: #ffffff;
+}
+
+
+.partners-section h1 {
+    font-size: 40px;
+    color: #004f67;
+    
+    margin-bottom: 40px;
+}
+
+/* Partners Container - Inline Logos */
+.partners-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.partner img {
+    max-width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.partner img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333333;
+    color: #f0f0f0;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/*PAGE ENDING ENDS HERE*/
 
 
 
