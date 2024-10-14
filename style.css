@@ -11,7 +11,7 @@ html, body {
 
 /*LANDING PAGE STARTS HERE*/
 .landing {
-    background: url('bluebackground.jpg') no-repeat center center/cover;
+    background: url('Assets/bluebackground.jpg') no-repeat center center/cover;
 }
 
 /* Navbar Styles */
@@ -478,5 +478,73 @@ h1 {
 
     .glass-container {
         width: 90%;
+    }
+}
+
+/* Team Member Hover Card */
+.hover-card {
+    display: none; 
+    position: absolute;
+    top: 80%; 
+    left: 50%; 
+    transform: translateX(-50%) translateY(10px); 
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 10;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    color: white;
+    text-align: left;
+}
+
+.hover-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hover-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Hover Effect: Show hover card on team member hover */
+.team-member {
+    position: relative;
+    margin-bottom: 100px; 
+}
+
+.team-member:hover .hover-card {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); 
+}
+
+.team-member .hover-card {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px); 
+}
+
+/* Add some hover effects to the team member */
+.team-member:hover .team-circle {
+    transform: scale(1.1); 
+}
+
+/* Optional: Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .hover-card {
+        width: 200px;  
+        top: 130%;     
+    }
+
+    .team-container {
+        flex-direction: column;  /* Stack team members vertically on small screens */
+    }
+
+    .team-member {
+        margin-bottom: 50px;  
     }
 }

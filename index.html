@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peo - Seeding Your Future</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/6030ddff7a.js" crossorigin="anonymous"></script> <!--DON'T FORGET THE REAL LINK-->
+    <script src="Assets/style.js"></script>
+    <script src="Assets/https://kit.fontawesome.com/6030ddff7a.js" crossorigin="anonymous"></script> <!--DON'T FORGET THE REAL LINK-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 
@@ -20,13 +21,15 @@
 <section id="landing" class="landing">
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">Peo</div>
+        <div class="logo">
+            <img src="Assets/PEO_logo_white.png" alt="Peo Logo" style="height: 80px;"> 
+        </div>
         <input type="text" class="search-bar" placeholder="Search...">
         <ul class="nav-links">
             <li><a href="#offer-section">What We Offer</a></li>
-            <li><a href="#">Item 2</a></li>
-            <li><a href="#">Item 3</a></li>
-            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#about-us">About us </a></li>
+            <li><a href="#team-section">Team</a></li>
+            <li><a href="#partners-section">Partners</a></li>
         </ul>
         <div class="profile-icon">
             <i class="fa-regular fa-user" style='font-size:24px;color:white;margin-right: 50px;'></i>
@@ -109,7 +112,7 @@
 
 <!--ABOUT US STARTS HERE-->
 
-<section class="about-us">
+<section id="about-us" class="about-us">
     <div class="about-us-content">
         <h1>About Us</h1>
         <div class="mission-vision-values">
@@ -132,39 +135,61 @@
     </div>
 </section>
 
-<section class="team-section">
+<section id="team-section" class="team-section">
     <h2>Meet the Team</h2>
     <div class="team-container">
         <div class="team-member">
             <div class="team-circle">
-                <img src="......jpg" alt="Nicolas">
+                <img src="Assets/......jpg" alt="Nicolas">
             </div>
             <h3>Nicolas Bosele</h3>
             <p>Project Manager</p>
+            <!-- Hover Card for Nicolas -->
+            <div class="hover-card">
+                <h2>Nicolas Bosele</h2>
+                <p>Project Manager with expertise in managing diverse teams, ensuring project success, and strategic planning.</p>
+            </div>
         </div>
         <div class="team-member">
             <div class="team-circle">
-                <img src=".....jpg" alt="Gobakwe">
+                <img src="Assets/.....jpg" alt="Gobakwe">
             </div>
             <h3>Gobakwe A. Nkgalo</h3>
             <p>Lead Developer</p>
+            <!-- Hover Card for Gobakwe -->
+            <div class="hover-card">
+                <h2>Gobakwe A. Nkgalo</h2>
+                <p>Lead Developer specializing in software development, UI/UX design, and technology integration.</p>
+            </div>
         </div>
         <div class="team-member">
             <div class="team-circle">
-                <img src="Lumbiel.jpg" alt="Lumbiel">
+                <img src="Assets/Lumbiel.jpg" alt="Lumbiel">
             </div>
             <h3>Lumbiel T. Timothy</h3>
             <p>Research Lead</p>
+            <!-- Hover Card for Lumbiel -->
+            <div class="hover-card">
+                <h2>Lumbiel T. Timothy</h2>
+                <p>Research Lead with a focus on market trends, data analytics, and research methodologies.</p>
+            </div>
         </div>
         <div class="team-member">
             <div class="team-circle">
-                <img src="image.jpg" alt="Jennifer">
+                <img src="Assets/image.jpg" alt="Jennifer">
             </div>
             <h3>Jennifer A. Masigwana</h3>
             <p>UI/UX Developer</p>
+            <!-- Hover Card for Jennifer -->
+            <div class="hover-card">
+                <h2>Jennifer A. Masigwana</h2>
+                <p>UI/UX Developer passionate about creating user-centered designs and enhancing user experiences.</p>
+            </div>
         </div>
     </div>
 </section>
+
+
 
 <!--ABOUT US ENDS HERE-->
 
@@ -179,32 +204,33 @@
 <section class="last-page">
 
 <!-- Partners Section -->
-<section class="partners-section">
+<section id="partners-section" class="partners-section">
     <h1>Our Partners</h1>
     <div class="partners-container">
         <div class="partner">
-            <img src="MITI.png" alt="MITI">
+            <img src="Assets/MITI.png" alt="MITI" style="height: 90px;">
         </div>
         <div class="partner">
-            <img src="BITC.png" alt="BITC">
+            <img src="Assets/BITC.png" alt="BITC" style="height: 100px;">
         </div>
         <div class="partner">
-            <img src="ceda.jpg" alt="CEDA">
+            <img src="Assets/ceda.jpg" alt="CEDA" style="height: 60px;">
         </div>
         <div class="partner">
-            <img src="LEA.png" alt="LEA">
+            <img src="Assets/LEA.png" alt="LEA" style="height: 60px;">
         </div>
         <div class="partner">
-            <img src="CIPA.png" alt="CIPA">
+            <img src="Assets/CIPA.png" alt="CIPA" style="height: 60px;">
         </div>
         <div class="partner">
-            <img src="FNB.jpeg" alt="FNB">
+            <img src="Assets/FNB.jpeg" alt="FNB" style="height: 60px;">
         </div>
         <div class="partner">
-            <img src="Orange.png" alt="Orange">
+            <img src="Assets/Orange.png" alt="Orange" style="height: 60px;">
         </div>
     </div>
 </section>
+
 
 <!-- Footer -->
 <footer  id="footer" class="footer">
@@ -218,6 +244,6 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="Assets/script.js"></script>
 </body>
 </html>
